@@ -497,30 +497,31 @@ export interface ApiBlogEntryBlogEntry extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiCommentComment extends Struct.CollectionTypeSchema {
-  collectionName: 'comments';
+export interface ApiJobEntryJobEntry extends Struct.CollectionTypeSchema {
+  collectionName: 'job_entries';
   info: {
-    displayName: 'comment';
-    pluralName: 'comments';
-    singularName: 'comment';
+    displayName: 'Job entry';
+    pluralName: 'job-entries';
+    singularName: 'job-entry';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    comment: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    email: Schema.Attribute.Email;
+    Description: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
-      'api::comment.comment'
+      'api::job-entry.job-entry'
     > &
       Schema.Attribute.Private;
-    Name: Schema.Attribute.String;
+    Location: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    Salary: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1040,7 +1041,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::blog-entry.blog-entry': ApiBlogEntryBlogEntry;
-      'api::comment.comment': ApiCommentComment;
+      'api::job-entry.job-entry': ApiJobEntryJobEntry;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * comment controller
+ * job-entry controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::comment.comment');
+module.exports = createCoreController('api::job-entry.job-entry');

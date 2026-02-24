@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_entries",
+  "info": {
+    "singularName": "job-entry",
+    "pluralName": "job-entries",
+    "displayName": "Job entry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Salary": {
+      "type": "string"
+    }
+  }
+}
