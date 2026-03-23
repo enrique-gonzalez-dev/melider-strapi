@@ -2,7 +2,17 @@
 
 module.exports = {
   config: {
-    locales: [],
+    auth: {
+      logo: '',
+    },
+    head: {
+      favicon: '',
+    },
+    locales: ['en'],
+    tutorials: false,
+    notifications: {
+      releases: true,
+    },
   },
   bootstrap() {
     // bootstrap code
