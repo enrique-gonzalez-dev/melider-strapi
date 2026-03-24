@@ -11,7 +11,7 @@ module.exports = {
     locales: ['en'],
     tutorials: false,
     notifications: {
-      releases: true,
+      releases: false,
     },
   },
   bootstrap() {
