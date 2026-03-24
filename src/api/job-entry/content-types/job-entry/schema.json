@@ -4,7 +4,8 @@
   "info": {
     "singularName": "job-entry",
     "pluralName": "job-entries",
-    "displayName": "Job entry"
+    "displayName": "Job entry",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,16 +13,20 @@
   "pluginOptions": {},
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "Location": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "Description": {
-      "type": "text"
+      "type": "text",
+      "required": false
     },
     "Salary": {
-      "type": "string"
+      "type": "string",
+      "required": false
     }
   }
 }

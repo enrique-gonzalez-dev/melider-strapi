@@ -1,9 +1,6 @@
 module.exports = {
   upload: {
-    enabled: true,
-    config: {
-      maxFileSize: 52428800, // 50MB
-    },
+    enabled: false, // Disabled due to compatibility issues
   },
   'users-permissions': {
     enabled: true,

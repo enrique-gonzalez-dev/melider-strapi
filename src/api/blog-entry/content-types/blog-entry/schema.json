@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog-entry",
     "pluralName": "blog-entries",
-    "displayName": "Blog entry"
+    "displayName": "Blog entry",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,13 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "entry": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": false
     },
     "Publish": {
-      "type": "date"
+      "type": "date",
+      "required": false
     }
   }
 }

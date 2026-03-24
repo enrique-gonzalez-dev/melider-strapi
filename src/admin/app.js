@@ -13,6 +13,9 @@ module.exports = {
     notifications: {
       releases: false,
     },
+    api: {
+      responseLimit: 104857600, // 100MB
+    },
   },
   bootstrap() {
     // bootstrap code
