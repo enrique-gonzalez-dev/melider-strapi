@@ -4,29 +4,23 @@
   "info": {
     "singularName": "job-entry",
     "pluralName": "job-entries",
-    "displayName": "Job entry",
-    "description": ""
+    "displayName": "Job entry"
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string",
-      "required": false
+    "title": {
+      "type": "string"
     },
-    "Location": {
-      "type": "string",
-      "required": false
+    "location": {
+      "type": "string"
     },
-    "Description": {
-      "type": "text",
-      "required": false
+    "description": {
+      "type": "text"
     },
-    "Salary": {
-      "type": "string",
-      "required": false
+    "salary": {
+      "type": "string"
     }
   }
 }

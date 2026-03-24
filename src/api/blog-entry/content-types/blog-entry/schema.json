@@ -4,25 +4,20 @@
   "info": {
     "singularName": "blog-entry",
     "pluralName": "blog-entries",
-    "displayName": "Blog entry",
-    "description": ""
+    "displayName": "Blog entry"
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string",
-      "required": false
+    "title": {
+      "type": "string"
     },
-    "entry": {
-      "type": "richtext",
-      "required": false
+    "content": {
+      "type": "richtext"
     },
-    "Publish": {
-      "type": "date",
-      "required": false
+    "publishedAt": {
+      "type": "datetime"
     }
   }
 }
